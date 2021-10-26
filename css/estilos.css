@@ -1,0 +1,51 @@
+section {
+    background-color: rgba(0, 0, 0, 0.61);
+    padding: 20px 0;
+}
+
+label input[type="text"]{
+    height:28px;
+    width:120px;
+    border: solid 1px #fff;
+    text-align:center;
+    color:rgba(214, 38, 38, 0.623);
+    border-radius:10px;
+    display:block;
+}
+
+li input[type="text"]{
+    height:28px;
+    width:40px;
+    border: solid 1px #fff;
+    text-align:center;
+    color:rgba(214, 38, 38, 0.623);
+    border-radius:10px;
+}
+
+.columna{
+    background-color: #faf395;
+    width:100px;
+    margin:0;
+}
+h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+body{
+    background: url(../94-940816_m.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+header{
+    background-color:rgba(214, 38, 38, 0.623);
+    text-align: center;
+    font-family:  'Rampart One', cursive;
+    
+}
+header h1{
+    color: #fff;
+}
+#formulario{
+   
+}

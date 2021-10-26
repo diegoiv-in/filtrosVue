@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>VUE</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/estilos.css" />
+        <script src="../js/vue.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header >
+            <span class="h2" style="color: rgba(179, 172, 172, 0.623);"> FILTROS VUE</span>
+        </header>
+        <section class="container text-center" id="cont">
+            <div class="row" id="formulario">
+                <div class="col-md-6 offset-md-3">
+                   <ul class="list-unstyled text-center">
+                       <li v-for="juego in mejoresJuegos" >
+                          <p style="color: rgb(212, 211, 211);" > {{ juego.titulo | alReves }}</p>
+                       </li>
+                   </ul>
+                   <input type="range" min="0" max="10" v-model="minimo">
+                   <p style="color: rgb(212, 211, 211);">{{ minimo }}</p> 
+                </div>
+            </div>
+            
+            <hr/>
+
+            <div class="row" id="formulario">
+                <div class="col-md-6 offset-md-3">
+                    <input type="search" v-model="busqueda" placeholder="Buscar juego">
+                   <ul class="list-unstyled text-center">
+                       <li v-for="juego in buscarJuego">
+                          <p style="color: rgb(212, 211, 211);"> {{ juego.titulo}}</p> 
+                       </li>
+                   </ul>
+                   <h1 style="color: rgb(212, 211, 211);">Coincidencias : {{coincidencias}}</h1>
+                </div>
+            </div>
+            
+            
+        </section>
+    
+        <script src="js/vue.js"></script>
+        <script src="js/funciones.js"></script>
+    </body>
+</html>
